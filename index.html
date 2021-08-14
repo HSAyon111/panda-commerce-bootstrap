@@ -145,7 +145,8 @@
                             <h5>$120</h5>
                         </div>
                         <div class="m-3">
-                            <button class="panda-btn-custom">Buy Now >></button>
+                            <button onclick="buyNowBtnClick()" class="panda-btn-custom buy-now-button">Buy Now
+                                >></button>
                         </div>
                     </div>
                 </div>
@@ -159,7 +160,7 @@
                             <h5>$320</h5>
                         </div>
                         <div class="m-3">
-                            <button class="panda-btn-custom">Buy Now >></button>
+                            <button class="panda-btn-custom buy-now-button">Buy Now >></button>
                         </div>
                     </div>
                 </div>
@@ -173,7 +174,7 @@
                             <h5>$350</h5>
                         </div>
                         <div class="m-3">
-                            <button class="panda-btn-custom">Buy Now >></button>
+                            <button class="panda-btn-custom buy-now-button">Buy Now >></button>
                         </div>
                     </div>
                 </div>
@@ -193,7 +194,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <button class="panda-btn-custom">Buy Now >></button>
+                            <button class="panda-btn-custom buy-now-button">Buy Now >></button>
                         </div>
                     </div>
                 </div>
@@ -207,13 +208,14 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <button class="panda-btn-custom">Buy Now >></button>
+                            <button class="panda-btn-custom buy-now-button">Buy Now >></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow h-100">
-                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-3.png" id="image" class="card-img-top" onmouseover="newImage()"
+                            onmouseout="originalImage()" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Black Kaltu Bag</h5>
                             <h5>$169</h5>
@@ -222,7 +224,7 @@
                                 height action.</p>
                         </div>
                         <div class="m-3">
-                            <button class="panda-btn-custom">Buy Now >></button>
+                            <button class="panda-btn-custom buy-now-button">Buy Now >></button>
                         </div>
                     </div>
                 </div>
@@ -233,11 +235,11 @@
             class="container panda-bg-info rounded-3 d-flex justify-content-center align-items-center"
             style="height: 300px;">
             <div>
-                <h2>LET'S STAY IN TOUCH</h2>
+                <h2 id="dbclick-color">LET'S STAY IN TOUCH</h2>
                 <p class="text-muted fw-bold">Get updates on sales, specials and more</p>
-                <input class="form-control" type="email" placeholder="Your Email">
+                <input id="email-field" class="form-control" type="email" placeholder="Your Email">
                 <br>
-                <button class="panda-btn-custom">SUBMIT</button>
+                <button id="submit-button" class="btn-primary" disabled>SUBMIT</button>
             </div>
         </section>
     </main>
@@ -250,6 +252,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
